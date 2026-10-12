@@ -127,9 +127,9 @@ h2 { margin: 0; font-size: clamp(38px, 5.2vw, 70px); font-weight: 500; letter-sp
 .professional { padding-block: 122px 126px; }
 .professional-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(44px, 9vw, 130px); margin: 48px 7% 0 12%; }
 .professional-photo { position: relative; margin: 0; background: var(--sage); }
-.professional-photo img { width: 100%; max-height: 640px; aspect-ratio: .78; object-fit: cover; object-position: 58% center; }
+.professional-photo img { display: block; width: 100%; height: auto; }
 .professional-photo figcaption { position: absolute; left: 12px; bottom: 12px; padding: 6px 9px; background: rgba(37,51,43,.75); color: white; font-size: 8px; }
-.portrait-seal { width: 100px; height: 100px; display: grid; place-content: center; position: absolute; right: -32px; top: 13%; border-radius: 50%; background: var(--paper); color: var(--olive); font-family: var(--serif); font-size: 16px; font-style: italic; line-height: 1.08; text-align: center; transform: rotate(6deg); }
+.portrait-seal { width: 100px; height: 100px; display: grid; place-content: center; position: absolute; left: 14px; right: auto; top: 13%; border-radius: 50%; background: var(--paper); color: var(--olive); font-family: var(--serif); font-size: 16px; font-style: italic; line-height: 1.08; text-align: center; transform: rotate(6deg); }
 .professional-copy { padding-block: 20px; }
 .professional-copy .eyebrow { margin-bottom: 18px; }
 .professional-copy h2 { font-size: clamp(46px, 5.7vw, 76px); }
@@ -268,8 +268,8 @@ h2 { margin: 0; font-size: clamp(38px, 5.2vw, 70px); font-weight: 500; letter-sp
   .professional { padding-block: 78px 82px; }
   .professional-grid { grid-template-columns: 1fr; gap: 34px; margin: 31px 4% 0; }
   .professional-photo { width: min(100%, 390px); margin-inline: auto; }
-  .professional-photo img { max-height: none; aspect-ratio: .84; object-position: 57% 35%; }
-  .portrait-seal { width: 80px; height: 80px; right: -12px; font-size: 13px; }
+
+  .portrait-seal { width: 80px; height: 80px; left: 12px; right: auto; font-size: 13px; }
   .professional-copy h2 { font-size: clamp(46px, 12vw, 64px); }
   .professional-intro { margin-block: 17px 22px; font-size: 12px; }
   .credentials { grid-template-columns: 106px 1fr; }
