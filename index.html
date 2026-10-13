@@ -290,6 +290,39 @@ h2 { margin: 0; font-size: clamp(38px, 5.2vw, 70px); font-weight: 500; letter-sp
   .whatsapp-float { min-height: 48px; right: 14px; bottom: max(12px, env(safe-area-inset-bottom)); left: 14px; justify-content: center; border-radius: 3px; }
   .wa-label { flex: 0 1 auto; }
 }
+/* Mobile readability: comfortable type sizes, calmer tracking, and stronger text contrast. */
+@media (max-width: 680px) {
+  .demo-ribbon { font-size: 10px; letter-spacing: .035em; }
+  .wordmark small { font-size: 9px; letter-spacing: .12em; }
+  .main-nav > a:not(.nav-cta), .nav-cta, .button, .text-link { font-size: 14px; }
+  .eyebrow, .section-kicker { font-size: 10px; letter-spacing: .08em; }
+  .hero-lede, .manifesto-aside p, .services-heading > p, .service-row p, .step p,
+  .professional-intro, .contact-copy > p:not(.eyebrow), .faq-intro p, .faq-answer p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .hero-proof p { font-size: 10px; }
+  .hero-note { font-size: 12px; }
+  .image-caption, .demo-caption, .professional-photo figcaption { font-size: 10px; }
+  .trust-line { font-size: 10px; letter-spacing: .045em; line-height: 1.5; }
+  .service-number, .step > span { font-size: 11px; }
+  .service-row h3 { font-size: 18px; }
+  .step h3 { font-size: 17px; }
+  .credentials span, .credentials p { font-size: 13px; }
+  .contact-meta { font-size: 11px; }
+  .form-heading { font-size: 11px; }
+  .lead-form > label:not(.consent) { font-size: 14px; }
+  .lead-form input[type="text"], .lead-form input[type="tel"], .lead-form select { font-size: 16px; }
+  .consent { font-size: 13px; line-height: 1.55; }
+  .form-status { font-size: 13px; }
+  .form-note { color: #626b61; font-size: 11px; }
+  .faq-item summary { font-size: 15px; }
+  .footer-main > p { font-size: 16px; }
+  .footer-top { font-size: 12px; }
+  .footer-bottom { color: #5f685e; font-size: 10px; letter-spacing: .015em; }
+  .whatsapp-float { font-size: 14px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .motion-ready .reveal { opacity: 1; transform: none; }
